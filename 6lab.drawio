@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Диаграмма классов (7 актеров)" id="ParSeem_jN5Zz67KaoEf">
+    <mxGraphModel dx="1426" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1" value="Диаграмма классов - Интерактивная игра с аналитикой и мониторингом" vertex="1">
+          <mxGeometry height="30" width="400" x="890" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=5;" value="&lt;b&gt;Игрок&lt;/b&gt;&lt;hr&gt;&lt;b&gt;Атрибуты:&lt;/b&gt;&lt;br&gt;- ID игрока: string&lt;br&gt;- Имя (ник): string&lt;br&gt;- Время в игре: float&lt;br&gt;- Уровень: int&lt;hr&gt;&lt;b&gt;Методы:&lt;/b&gt;&lt;br&gt;+ ВыбратьПерсонажа()&lt;br&gt;+ ПолучитьСтатистику()&lt;br&gt;+ НастроитьПараметры()" vertex="1">
+          <mxGeometry height="170" width="220" x="630" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=5;" value="&lt;b&gt;Разработчик&lt;/b&gt;&lt;hr&gt;&lt;b&gt;Атрибуты:&lt;/b&gt;&lt;br&gt;- ID разработчика: string&lt;br&gt;- Уровень доступа: string&lt;br&gt;- Email: string&lt;hr&gt;&lt;b&gt;Методы:&lt;/b&gt;&lt;br&gt;+ ПросмотретьАналитику()&lt;br&gt;+ СформироватьОтчет()&lt;br&gt;+ НастроитьИгру()" vertex="1">
+          <mxGeometry height="160" width="220" x="630" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=5;" value="&lt;b&gt;Администратор&lt;/b&gt;&lt;hr&gt;&lt;b&gt;Атрибуты:&lt;/b&gt;&lt;br&gt;- ID администратора: string&lt;br&gt;- Права: List&lt;string&gt;&lt;hr&gt;&lt;b&gt;Методы:&lt;/b&gt;&lt;br&gt;+ УправлятьПользователями()&lt;br&gt;+ НазначитьПрава()&lt;br&gt;+ ПросмотретьЛоги()" vertex="1">
+          <mxGeometry height="160" width="220" x="630" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=5;" value="&lt;b&gt;Игровой движок&lt;/b&gt;&lt;hr&gt;&lt;b&gt;Атрибуты:&lt;/b&gt;&lt;br&gt;- ID движка: string&lt;br&gt;- Исполнитель (платформа): string&lt;br&gt;- Текущий FPS: int&lt;hr&gt;&lt;b&gt;Методы:&lt;/b&gt;&lt;br&gt;+ ОбработатьВвод()&lt;br&gt;+ ОбновитьИгру()&lt;br&gt;+ ОтобразитьКадр()&lt;br&gt;+ ЗаписатьОшибку()" vertex="1">
+          <mxGeometry height="180" width="240" x="970" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=5;" value="&lt;b&gt;Система аналитики&lt;/b&gt;&lt;hr&gt;&lt;b&gt;Атрибуты:&lt;/b&gt;&lt;br&gt;- API-ключ: string&lt;br&gt;- Размер буфера: int&lt;hr&gt;&lt;b&gt;Методы:&lt;/b&gt;&lt;br&gt;+ ЗафиксироватьСобытие()&lt;br&gt;+ ОтправитьДанные()&lt;br&gt;+ ПолучитьАгрегированные()" vertex="1">
+          <mxGeometry height="160" width="240" x="970" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=5;" value="&lt;b&gt;Система мониторинга&lt;/b&gt;&lt;hr&gt;&lt;b&gt;Атрибуты:&lt;/b&gt;&lt;br&gt;- Текущий FPS: float&lt;br&gt;- Загрузка CPU: float&lt;br&gt;- Использование памяти: float&lt;hr&gt;&lt;b&gt;Методы:&lt;/b&gt;&lt;br&gt;+ НачатьМониторинг()&lt;br&gt;+ ПолучитьМетрики()&lt;br&gt;+ ПроверитьПороги()" vertex="1">
+          <mxGeometry height="160" width="240" x="970" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=5;" value="&lt;b&gt;База данных&lt;/b&gt;&lt;hr&gt;&lt;b&gt;Атрибуты:&lt;/b&gt;&lt;br&gt;- Строка подключения: string&lt;br&gt;- Статус: string&lt;hr&gt;&lt;b&gt;Методы:&lt;/b&gt;&lt;br&gt;+ СохранитьДанные()&lt;br&gt;+ ВыполнитьЗапрос()&lt;br&gt;+ СохранитьОтчет()" vertex="1">
+          <mxGeometry height="160" width="220" x="1290" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-9" edge="1" parent="1" source="g-yX-Z7pD-DUyS4ziwti-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;" target="g-yX-Z7pD-DUyS4ziwti-5" value="управляет">
+          <mxGeometry relative="1" x="-0.04" y="18" as="geometry">
+            <mxPoint x="-8" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-10" edge="1" parent="1" source="g-yX-Z7pD-DUyS4ziwti-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;" target="g-yX-Z7pD-DUyS4ziwti-6" value="просматривает">
+          <mxGeometry relative="1" x="0.0769" y="-10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-11" edge="1" parent="1" source="g-yX-Z7pD-DUyS4ziwti-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;" target="g-yX-Z7pD-DUyS4ziwti-8" value="управляет">
+          <mxGeometry relative="1" x="0.1642" y="-50" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-12" edge="1" parent="1" source="g-yX-Z7pD-DUyS4ziwti-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;dashed=1;" target="g-yX-Z7pD-DUyS4ziwti-3" value="назначает права">
+          <mxGeometry relative="1" y="-90" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-13" edge="1" parent="1" source="g-yX-Z7pD-DUyS4ziwti-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;dashed=1;" target="g-yX-Z7pD-DUyS4ziwti-6" value="события">
+          <mxGeometry relative="1" y="-60" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-14" edge="1" parent="1" source="g-yX-Z7pD-DUyS4ziwti-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;dashed=1;" target="g-yX-Z7pD-DUyS4ziwti-7" value="метрики">
+          <mxGeometry relative="1" x="0.75" y="90" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-15" edge="1" parent="1" source="g-yX-Z7pD-DUyS4ziwti-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;" target="g-yX-Z7pD-DUyS4ziwti-8" value="сохраняет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-16" edge="1" parent="1" source="g-yX-Z7pD-DUyS4ziwti-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;" target="g-yX-Z7pD-DUyS4ziwti-8" value="сохраняет логи">
+          <mxGeometry relative="1" x="0.1875" y="-14" as="geometry">
+            <mxPoint x="-4" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="g-yX-Z7pD-DUyS4ziwti-17" edge="1" parent="1" source="g-yX-Z7pD-DUyS4ziwti-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;dashed=1;" target="g-yX-Z7pD-DUyS4ziwti-8" value="формирует отчет">
+          <mxGeometry relative="1" x="-0.6818" y="60" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
